@@ -1,0 +1,170 @@
+header {
+  background-color: #FECE00;
+}
+
+header .logo {
+  margin-left: 35%;
+}
+
+.country-section {
+  position: relative;
+}
+
+.country-section .country-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 35%;
+  top: 3rem;
+}
+
+.country-section .country-container h1 {
+  color: #FECE00;
+}
+
+.country-section .country-container button {
+  font-size: 75%;
+  padding: 5px;
+}
+
+.country-section .country-container button i {
+  color: #FECE00;
+}
+
+.country-section .country-container img {
+  height: 50px;
+  width: 50px;
+}
+
+.country-section .country-lists {
+  z-index: 10000;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.521)));
+  background: linear-gradient(rgba(0, 0, 0, 0.521));
+  transform: translate(-57%, 60%);
+  -webkit-transform: translate(-57%, 60%);
+  -moz-transform: translate(-57%, 60%);
+  -ms-transform: translate(-57%, 60%);
+  -o-transform: translate(-57%, 60%);
+  overflow-y: scroll;
+  visibility: hidden;
+}
+
+.country-section .country-lists .search-text {
+  width: 70%;
+}
+
+.country-section .country-lists .lists {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.country-section .country-lists .lists a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.country-section .country-lists .lists a h6 {
+  margin: 10px;
+}
+
+.country-results .country-results-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 27%;
+  transform: translateY(205%);
+  -webkit-transform: translateY(205%);
+  -moz-transform: translateY(205%);
+  -ms-transform: translateY(205%);
+  -o-transform: translateY(205%);
+}
+
+.country-results .country-results-container .box-1 {
+  background-color: #FECE00;
+  color: #fff;
+  height: 15vh;
+  width: 15vw;
+  position: relative;
+  right: 60px;
+}
+
+.country-results .country-results-container .box-1 h6 {
+  margin-left: 10px;
+}
+
+.country-results .country-results-container .box-1 h2 {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.country-results .country-results-container .box-1 h3 {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.country-results .country-results-container .box-2 {
+  background-color: #FECE00;
+  color: #fff;
+  height: 15vh;
+  width: 15vw;
+}
+
+.country-results .country-results-container .box-2 h6 {
+  margin-left: 10px;
+}
+
+.country-results .country-results-container .box-2 h2 {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.country-results .country-results-container .box-2 h3 {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.country-results .country-results-container .box-3 {
+  background-color: #FECE00;
+  color: #fff;
+  height: 15vh;
+  width: 15vw;
+  margin-left: 60px;
+}
+
+.country-results .country-results-container .box-3 h6 {
+  margin-left: 10px;
+}
+
+.country-results .country-results-container .box-3 h2 {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.country-results .country-results-container .box-3 h3 {
+  text-align: right;
+  margin-right: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  font-family: 'Oswald', sans-serif;
+}
+
+.row {
+  margin: auto;
+  width: 1140px;
+}
+/*# sourceMappingURL=style.css.map */

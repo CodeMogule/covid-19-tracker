@@ -1,0 +1,136 @@
+header{
+    background-color: #FECE00;
+
+    .logo{
+      margin-left: 35%;
+    }
+}
+
+.country-section{
+    position: relative;
+    .country-container{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 35%;
+        top: 3rem;
+
+        h1{
+            color:#FECE00 ;
+        }
+
+        button{
+            font-size: 75%;
+            padding: 5px;
+
+            i{
+                color: #FECE00;
+            }
+        }
+
+        img{
+            height: 50px;
+            width: 50px;
+        }
+    }
+
+    .country-lists{
+        z-index: 10000;
+        background:linear-gradient(rgba(0, 0, 0, 0.521));
+        transform: translate(-57%,60%);
+        -webkit-transform: translate(-57%,60%);
+        -moz-transform: translate(-57%,60%);
+        -ms-transform: translate(-57%,60%);
+        -o-transform: translate(-57%,60%);
+        overflow-y: scroll;
+        visibility: hidden;
+        .search-text{
+            width: 70%;
+        }
+
+        .lists{
+            margin-left: 10px;
+            margin-top: 10px;
+            a{color: #fff;
+                text-decoration: none;
+
+                h6{
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
+
+.country-results{
+    .country-results-container{
+        display: flex;
+        position: absolute;
+        left: 27%;
+        transform: translateY(205%);
+        -webkit-transform: translateY(205%);
+        -moz-transform: translateY(205%);
+        -ms-transform: translateY(205%);
+        -o-transform: translateY(205%);
+      
+        .box-1{
+            background-color: #FECE00;
+            color: #fff;
+            height: 15vh;
+            width: 15vw;
+            position: relative;
+            right: 60px;
+            h6{
+                margin-left: 10px;
+            }
+            h2{
+                text-align: center;
+                margin-top: 15px;
+            }
+
+            h3{
+                text-align: right;
+                margin-right: 10px;
+            }
+        }
+
+        .box-2{
+            background-color: #FECE00;
+            color: #fff;
+            height: 15vh;
+            width: 15vw;
+            h6{
+                margin-left: 10px;
+            }
+            h2{
+                text-align: center;
+                margin-top: 15px;
+            }
+
+            h3{
+                text-align: right;
+                margin-right: 10px;
+            }
+        }
+
+        .box-3{
+            background-color: #FECE00;
+            color: #fff;
+            height: 15vh;
+            width: 15vw;
+            margin-left: 60px;
+            h6{
+                margin-left: 10px;
+            }
+            h2{
+                text-align: center;
+                margin-top: 15px;
+            }
+
+            h3{
+                text-align: right;
+                margin-right: 10px;
+            }
+        }
+    }
+}
