@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./Styles/SASS/style.css">
+<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
     <title>Covid-19 Tracker</title>
 </head>
 <body>
@@ -19,24 +20,36 @@
     <main>
         <div class="country-section">
             <div class="country-container">
+                <!--
             <h1>GLOBAL</h1>
+                -->
             <img src="./Images/line.png" alt="">
-            <button class="dropdown-btn">
+            <button class="dropdown-btn" onclick="clickBtn()">
                 CHANGE COUNTRY <i class="fas fa-arrow-down"></i>
             </button>
+            </div>
+
             <div class="country-lists">
+                <i class="fas fa-times-circle close"></i>
                 <form id="search-box">
                     <input type="search" class="search-text" placeholder="search country...">
                 </form>
                 <div class="lists">
+                   <!-- 
                 <a href=""><h6>USA</h6></a>
                 <a href=""><h6>UK</h6></a>
                 <a href=""><h6>JAPAN</h6></a>
                 <a href=""><h6>MALYSIA</h6></a>
                 <a href=""><h6>KUWAIT</h6></a>
                <a href=""><h6>FRANCE</h6></a>
+               <a href=""><h6>USA</h6></a>
+               <a href=""><h6>UK</h6></a>
+               <a href=""><h6>JAPAN</h6></a>
+               <a href=""><h6>MALYSIA</h6></a>
+               <a href=""><h6>KUWAIT</h6></a>
+              <a href=""><h6>FRANCE</h6></a>
+                   -->
                </div>
-            </div>
             </div>
         </div>
 
@@ -68,5 +81,6 @@
 
 
     <script src="https://kit.fontawesome.com/fc8b51f2eb.js" crossorigin="anonymous"></script>
+    <script src="./JS/bundle.js"></script>
 </body>
 </html>

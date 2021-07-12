@@ -29,10 +29,18 @@ header .logo {
 .country-section .country-container button {
   font-size: 75%;
   padding: 5px;
+  color: #fff;
+  background-color: #FECE00;
+  border-color: #FECE00;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .country-section .country-container button i {
-  color: #FECE00;
+  color: #fff;
 }
 
 .country-section .country-container img {
@@ -44,17 +52,23 @@ header .logo {
   z-index: 10000;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.521)));
   background: linear-gradient(rgba(0, 0, 0, 0.521));
-  transform: translate(-57%, 60%);
-  -webkit-transform: translate(-57%, 60%);
-  -moz-transform: translate(-57%, 60%);
-  -ms-transform: translate(-57%, 60%);
-  -o-transform: translate(-57%, 60%);
   overflow-y: scroll;
   visibility: hidden;
+  width: 20%;
+  position: absolute;
+  left: 45.5%;
+  top: 6.5rem;
 }
 
 .country-section .country-lists .search-text {
-  width: 70%;
+  width: 80%;
+}
+
+.country-section .country-lists .close {
+  float: right;
+  font-size: 150%;
+  cursor: pointer;
+  color: #fff;
 }
 
 .country-section .country-lists .lists {
@@ -109,7 +123,7 @@ header .logo {
 
 .country-results .country-results-container .box-2 {
   background-color: #FECE00;
-  color: #fff;
+  color: #008000;
   height: 15vh;
   width: 15vw;
 }
@@ -130,7 +144,7 @@ header .logo {
 
 .country-results .country-results-container .box-3 {
   background-color: #FECE00;
-  color: #fff;
+  color: #FF0000;
   height: 15vh;
   width: 15vw;
   margin-left: 60px;
