@@ -47,11 +47,16 @@ i{
         overflow-y: scroll;
         visibility: hidden;
         width: 20%;
+        height: 50vh;
         position: absolute;
         left:45.5% ;
         top: 6.5rem;
         .search-text{
             width: 80%;
+        }
+
+        ul{
+            list-style: none;
         }
 
         .close{
@@ -62,6 +67,7 @@ i{
         }
 
         .lists{
+            display: flex;
             margin-left: 10px;
             margin-top: 10px;
             a{color: #fff;

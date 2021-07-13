@@ -4,14 +4,17 @@ import { apiKey } from "./index";
 
 export class Country{
     constructor(){
-        //...
+
     }
-    getVisitorsCountry = function(){
+
+    getVisitorsCountry(){
         //get visitors country Name IP ADDRESS
         const markup = `<h1>${geoplugin_countryName()}</h1>`
         elements.countryContainer.insertAdjacentHTML('afterbegin',markup)
     }
-    getCountries = async function(){
+    
+    getCountries(slice1,slice2,classElement){
+        //get lists of countries
         const options = {
             method: 'GET',
             url: 'https://covid-193.p.rapidapi.com/countries',
@@ -23,12 +26,13 @@ export class Country{
           
           axios.request(options).then(function (response) {
              let countryLists = response.data.response;
-             countryLists.forEach((country) => {
-                 let markup = `
-                 <a href=""><h6>${country}</h6></a>
+               countryLists.splice(slice1,slice2).forEach((country,index) => {
+                let markup = `
+                <li><a href=""><h6>${country}</h6></a></li>
                  `
-                 elements.Lists.insertAdjacentHTML('beforeend',markup)
+                 document.getElementById(classElement).insertAdjacentHTML('beforeend',markup)
              })
+            
           }).catch(function (error) {
               console.error(error);
           });

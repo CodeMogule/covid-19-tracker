@@ -55,6 +55,7 @@ header .logo {
   overflow-y: scroll;
   visibility: hidden;
   width: 20%;
+  height: 50vh;
   position: absolute;
   left: 45.5%;
   top: 6.5rem;
@@ -62,6 +63,10 @@ header .logo {
 
 .country-section .country-lists .search-text {
   width: 80%;
+}
+
+.country-section .country-lists ul {
+  list-style: none;
 }
 
 .country-section .country-lists .close {
@@ -72,6 +77,9 @@ header .logo {
 }
 
 .country-section .country-lists .lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: 10px;
   margin-top: 10px;
 }
