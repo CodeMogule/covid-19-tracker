@@ -4,5 +4,6 @@ export const elements = {
     countryContainer:document.querySelector('.country-container'),
     Lists: document.querySelector('.lists'),
     listOfCountries: document.querySelector('.list-of-countries'),
-    searchText: document.querySelector('.search-text')
+    searchText: document.querySelector('.search-text'),
+    test: document.querySelectorAll('.test')
 }

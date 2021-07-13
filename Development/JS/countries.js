@@ -28,7 +28,7 @@ export class Country{
              let countryLists = response.data.response;
                countryLists.splice(slice1,slice2).forEach((country,index) => {
                 let markup = `
-                <li><a href=""><h6>${country}</h6></a></li>
+                <li data-name = "${country}" ><a href="javascript:void(0)"><h6 onclick = 'selectCountry(event,${classElement})' class = "test">${country}</h6></a></li>
                  `
                  document.getElementById(classElement).insertAdjacentHTML('beforeend',markup)
              })
