@@ -9,7 +9,8 @@ export class Country{
 
     getVisitorsCountry(){
         //get visitors country Name IP ADDRESS
-        const markup = `<h1>${geoplugin_countryName()}</h1>`
+        //${geoplugin_countryName()}
+        const markup = `<h1 class = "country-name"></h1>`
         elements.countryContainer.insertAdjacentHTML('afterbegin',markup)
     }
     
@@ -28,7 +29,7 @@ export class Country{
              let countryLists = response.data.response;
                countryLists.splice(slice1,slice2).forEach((country,index) => {
                 let markup = `
-                <li data-name = "${country}" ><a href="javascript:void(0)"><h6 onclick = 'selectCountry(event,${classElement})' class = "test">${country}</h6></a></li>
+                <li data-name = "${country}" ><a href="javascript:void(0)"><h6 onclick = 'selectCountry(event)' class = "test">${country}</h6></a></li>
                  `
                  document.getElementById(classElement).insertAdjacentHTML('beforeend',markup)
              })
