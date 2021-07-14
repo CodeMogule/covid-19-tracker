@@ -1,6 +1,7 @@
 import axios from "axios";
 import { elements } from "./elements"
-import { apiKey } from "./index";
+import { countryData } from "./countrydata";
+
 
 export class Country{
     constructor(){
@@ -9,8 +10,7 @@ export class Country{
 
     getVisitorsCountry(){
         //get visitors country Name IP ADDRESS
-        //${geoplugin_countryName()}
-        const markup = `<h1 class = "country-name"></h1>`
+        const markup = `<h1 class = "country-name">${geoplugin_countryName(countryData(geoplugin_countryName()))}</h1>`
         elements.countryContainer.insertAdjacentHTML('afterbegin',markup)
     }
     
