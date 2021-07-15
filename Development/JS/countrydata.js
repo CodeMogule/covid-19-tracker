@@ -15,7 +15,7 @@ export async function countryData(countryName){
       axios.request(options1).then(function (response) {
           let getRes = response.data.response
           getRes.splice(0,1).forEach((data) => {
-
+              console.log(data)
               //cases UI results
               const markupCases = `
               <h2>${data.cases.total}</h2>

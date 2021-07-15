@@ -1,9 +1,7 @@
 import * as dropdown from './dropdown';
 import {Country} from './countries'
 import { search } from './search';
-
-
-export let apiKey = `499b77f963msh3c6abaaee73ee6bp130a5djsn2745a3d67ada`;
+import { chart } from './chartdata';
 
 //country function
 const country = new Country()
@@ -17,6 +15,7 @@ search(`first-row`)
 search(`second-row`)
 search(`third-row`)
 
-
+//Chart Function
+chart()
 
 
