@@ -1,7 +1,7 @@
 import * as dropdown from './dropdown';
 import {Country} from './countries'
 import { search } from './search';
-import { chart } from './chartdata';
+
 
 //country function
 const country = new Country()
@@ -15,7 +15,5 @@ search(`first-row`)
 search(`second-row`)
 search(`third-row`)
 
-//Chart Function
-chart()
 
 

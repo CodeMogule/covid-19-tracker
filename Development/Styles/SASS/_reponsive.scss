@@ -1,0 +1,115 @@
+@media only screen and (max-width:600px){
+header{
+    background-color: #FECE00;
+
+    .logo{
+      margin-left: 28%;
+      width:50%;
+    }
+}
+
+.country-container{
+    flex-direction: column;
+    left: 38% !important;
+}
+
+.country-lists{
+    width: 50vw !important;
+
+    .lists{
+        flex-direction: column ;
+    }
+}
+
+.country-results-container{
+    flex-direction: column;
+    bottom: 100%;
+    left: 30% !important;
+
+    .box-1{
+        position:unset !important;
+        width: 50vw !important;
+        margin-bottom: 20px;
+    }
+    .box-2{
+        width: 50vw !important;
+        margin-bottom: 20px;
+    }
+    .box-3{
+        margin-left: 0 !important;
+        width: 50vw !important;
+    }
+}
+
+.chart{
+    width: 95vw !important;
+    height: 70vh !important;
+   
+    .chart-result{
+    transform: translate(0%,40rem);
+    -webkit-transform: translate(0%,40rem);
+    -moz-transform: translate(0%,40rem);
+    -ms-transform: translate(0%,40rem);
+    -o-transform: translate(0%,40rem);
+    font-size: 50%;
+}
+}
+}
+
+@media only screen and (min-width:601px) and (max-width:900px){
+    header{
+        background-color: #FECE00;
+    
+        .logo{
+          margin-left: 28%;
+          width:50%;
+        }
+    }
+    
+    .country-container{
+        flex-direction: column;
+        left: 45% !important;
+    }
+    
+    .country-lists{
+        width: 50vw !important;
+    
+        .lists{
+            flex-direction: column ;
+        }
+    }
+    
+    .country-results-container{
+        flex-direction: column;
+        bottom: 100%;
+        left: 30% !important;
+    
+        .box-1{
+            position:unset !important;
+            width: 50vw !important;
+            margin-bottom: 20px;
+        }
+        .box-2{
+            width: 50vw !important;
+            margin-bottom: 20px;
+        }
+        .box-3{
+            margin-left: 0 !important;
+            width: 50vw !important;
+        }
+    }
+    
+    .chart{
+        width: 95vw !important;
+        height: 70vh !important;
+       
+        .chart-result{
+        transform: translate(0%,40rem);
+        -webkit-transform: translate(0%,40rem);
+        -moz-transform: translate(0%,40rem);
+        -ms-transform: translate(0%,40rem);
+        -o-transform: translate(0%,40rem);
+        font-size: 50%;
+    }
+    }
+}

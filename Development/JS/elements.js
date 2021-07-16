@@ -10,5 +10,6 @@ export const elements = {
     box1: document.querySelector('.box-1'),
     box2: document.querySelector('.box-2'),
     box3: document.querySelector('.box-3'),
-    chart: document.querySelector('.chart-result')
+    chart: document.querySelector('.chart-result'),
+    parentChart : document.querySelector('.chart')
 }

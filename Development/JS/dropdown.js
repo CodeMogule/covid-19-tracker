@@ -1,6 +1,10 @@
 import {elements} from './elements'
 import { countryData } from './countrydata';
 import { removeData } from './countrydata';
+import { chart } from './chartdata';
+import Chart from 'chart.js'
+
+
  window.clickBtn = function (){
     elements.countryLists.style.visibility = 'visible'
 }
@@ -17,11 +21,13 @@ if(event.target.classList.contains('test')){
         if(index === dataName.indexOf(event.target)){
            header.forEach((ele) => {
                //get country name to the header
-               ele.innerHTML = names.textContent
+               ele.innerHTML = names.textContent;
                //hide the dropdown once clicked
-               elements.countryLists.style.visibility = 'hidden'
+               elements.countryLists.style.visibility = 'hidden';
                //get country data
-               countryData(names.textContent)
+               countryData(names.textContent);
+               //get bar data
+               chart(names.textContent)
                //remove Data
              removeData(`.box-1`)
              removeData(`.box-2`)
